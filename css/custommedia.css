@@ -1,0 +1,58 @@
+@charset "utf-8";
+/* CSS Document */
+
+@media only screen and (min-width:969px) and (max-width:1024px){
+	
+}
+
+@media screen and (max-width:1023px) {
+ .js #menu {
+  display:none;
+ }
+ 
+ .js .slicknav_menu {
+  display:block;
+ }
+ 
+ .slicknav_btn { background: #2785e7 url(../images/nav-button.png) no-repeat center; position: absolute; right: 30px; top: 10px; display: block; cursor: pointer; overflow: hidden; height: 30px; width: 40px; z-index: 999999; border-radius: 3px !important; }
+
+.slicknav_btn.slicknav_open { background: #2785e7 url(../images/close-nav-button.png) no-repeat center;/* Close icon */ color: #fff; z-index: 999999; }
+
+.slicknav_menutxt { display: none; }
+ .slicknav_parent.slicknav_open ul li a{padding-left:25px; color:#2785e7;}
+ 
+ .header .logo{text-align:center;}	
+ .submitform .form-control{margin-bottom:10px;}
+}
+
+
+@media screen and (max-width: 767px) {
+  .js #menu {
+  display:none;
+ }
+ 
+ .js .slicknav_menu {
+  display:block;
+ }
+ 
+ .slicknav_btn { background: #2785e7 url(../images/nav-button.png) no-repeat center; position: absolute; right: 30px; top: 10px; display: block; cursor: pointer; overflow: hidden; height: 30px; width: 40px; z-index: 999999; border-radius: 3px !important; }
+
+.slicknav_btn.slicknav_open { background: #2785e7 url(../images/close-nav-button.png) no-repeat center;/* Close icon */ color: #fff; z-index: 999999; }
+
+.slicknav_menutxt { display: none; }
+ .slicknav_parent.slicknav_open ul li a{padding-left:25px; color:#2785e7;}
+ 
+ .banner figure{position:relative;}
+ .howitworks{padding-top:25px;}
+ .howitrow p{margin-bottom:25px;}
+ .banner{padding-top:35px;}
+ .endlessfeature .endlesscontent{padding-top:35px; text-align:center;}
+ .endlessfeature .endlesscontent h2{margin-top:8px;}
+ .endlessfeature{padding-bottom:25px;}
+ .videosection .btn{margin-bottom:25px;}
+}
+
+
+@media screen and (max-width:479px){
+.flexiblesection{padding-bottom:20px;}
+}

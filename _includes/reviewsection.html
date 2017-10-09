@@ -1,0 +1,32 @@
+<!-- ================ Reviews Section ================ -->
+<div class="container reviewsection videosection">
+	<h4>Product Reviews</h4>
+	<div class="row">
+		<div class="col-xs-12 col-sm-12 col-md-12">
+		<div id="Carousel" class="carousel slide carousel-fade">
+			<div class="carousel-inner">
+			{% for buzz in page.review %}
+				<div class="item {% if forloop.index == 1 %} active {% endif %}">
+					<div class="caption">
+						{{buzz.info}}
+					</div>
+					<div class="client-name">
+						 {{buzz.name}}
+					</div>
+				</div>
+			 {% endfor %}
+			</div>
+		
+			<a class="left carousel-control" href="#Carousel" data-slide="prev">
+				<span class="fa fa-chevron-left"></span>
+			</a>
+			<a class="right carousel-control" href="#Carousel" data-slide="next">
+				<span class="fa fa-chevron-right"></span>
+			</a>
+		</div>
+		</div>
+    	
+		
+		
+    </div>
+</div>

@@ -1,0 +1,26 @@
+<!-- ================ Endless Features Section ================ -->
+<div class="container-fluid endlessfeature">
+	<div class="container endlesscontent">
+    	<div class="row">
+        	<div class="col-xs-12 col-sm-12 col-md-8">
+    			<h1>{{page.endlessHeading}}</h1>
+                <p>{{page.endlessSubTitle}}</p>
+                <div class="row endlessrow">
+					{% for endlessList in page.endlesFeatures %}
+                	<div class="col-xs-12 col-sm-6 col-md-6 endlesscol">
+                    	<div class="row">
+							<div class="col-xs-12 col-sm-2 col-md-2 no-pad"><img src="{{site.baseurl}}/images/{{endlessList.icon}}" alt=""></div>
+							<div class="col-xs-12 col-sm-10 col-md-10">
+								<h2>{{endlessList.heading}}High Quality Product</h2>
+								<p>{{endlessList.des}}</p>
+							</div>
+						</div>
+                    </div>
+					{% endfor %}
+                </div>
+                
+                <a href="{{page.endlesbtnUrl}}" class="btn">Buy It Now</a>
+            </div>
+        </div>
+    </div>
+</div>

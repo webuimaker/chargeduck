@@ -1,0 +1,95 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face {
+    font-family: 'dinregular';
+    src: url('../fonts/dinblackalternate-webfont.woff2') format('woff2'),
+         url('../fonts/dinblackalternate-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'dinregular';
+    src: url('../fonts/dinbold-webfont.woff2') format('woff2'),
+         url('../fonts/dinbold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'dinlight';
+    src: url('../fonts/dinlight-webfont.woff2') format('woff2'),
+         url('../fonts/dinlight-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'dinregular';
+    src: url('../fonts/dinlightalternate-webfont.woff2') format('woff2'),
+         url('../fonts/dinlightalternate-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'dinmedium';
+    src: url('../fonts/dinmedium-webfont.woff2') format('woff2'),
+         url('../fonts/dinmedium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'dinregular';
+    src: url('../fonts/dinmediumalternate-webfont.woff2') format('woff2'),
+         url('../fonts/dinmediumalternate-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'dinregular';
+    src: url('../fonts/dinregular-webfont.woff2') format('woff2'),
+         url('../fonts/dinregular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'dinregular';
+    src: url('../fonts/dinregularalternate-webfont.woff2') format('woff2'),
+         url('../fonts/dinregularalternate-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}

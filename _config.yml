@@ -1,0 +1,94 @@
+### GENERAL SETTINGS ###
+
+# Site settings
+name: "chrysmo"
+title: Home Improvement Improved - Chat Instantly With Local Pros | Chrysmo
+keywords: "case management system, dex, ndis, healthcare, dss, chsp"
+description: Start live chatting with home improvement pros instantly with Chrysmo. Get real-time help with DIY projects including plumbing, HVAC, home decor, and more.
+author: Chrysmo
+publisher: Chrysmo
+email: hello@info.com
+url: "url"
+permalink: none
+
+# Social networks usernames. Shown in footer.
+social:
+  - title: Facebook
+    icon: fa-facebook
+    url: 
+  - title: Twitter
+    icon: fa-twitter
+    url: 
+  - title: Instagram
+    icon: fa-instagram
+    url:
+
+# Social networks usernames. Shown in footer.
+footerNav:
+  - title: Blog
+    url: 
+  - title: Terms
+    url: 
+  - title: Privacy
+    url:
+  
+
+gems:
+   - jekyll-seo-tag
+   - jekyll-paginate
+   - jekyll-sitemap
+
+### pagination
+paginate: 10
+paginate_path: "/blog/page:num/"
+
+
+### Site Navigations
+navigations: 
+ - 
+  title: "Home"
+  url: "index.html"
+ - 
+  title: "Features"
+  url: "#"
+ - 
+  title: "Screenshots"
+  url: "#"
+ - 
+  title: "Review"
+  url: "#"
+ - 
+  title: "Pricing"
+  url: "#"
+ - 
+  title: "Team"
+  url: "#"
+ - 
+  title: "Buy it Now"
+  url: "#"
+  
+
+  
+### Build settings
+markdown: kramdown
+
+kramdown:
+  input: GFM
+  hard_wrap: false
+  highlighter: rouge
+
+# Site Navigation
+### baseurl: /
+
+
+sass:
+  style: compressed
+  #sass_dir: _sass
+
+collections:
+  faq:
+    output: true
+  howitwork:
+    output: true
+  flexible:
+    output: true

@@ -1,0 +1,15 @@
+<!-- ================ Faq Section ================ -->
+<div class="container faqsection">
+	<div class="faqtop">
+        <h4>Frequently Asked Questions?</h4>
+        <p>Do you have any question? We’ve got answers. If you have some other questions, feel free <br>to send us an email to <a href="mailto:support@domain.com">support@domain.com</a></p>
+    </div>    
+    <div class="row">
+		{% for faqList in site.faq  %}
+			<div class="col-xs-12 col-sm-6 col-md-6 faqcol">
+				<h3>{{faqList.heading}}</h3>
+				{{faqList.content}}
+			</div>
+		{% endfor %}	
+    </div>
+</div>

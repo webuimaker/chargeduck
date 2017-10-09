@@ -1,0 +1,15 @@
+<!-- ================ How It Works Section ================ -->
+<div class="container howitworks">
+	<h4>How It Works</h4>
+    <p>Lorem ipsum dolor sit amt, consectet adop adipisicing elit, sed do eiusmod teporara incididuntLorem ipsum dolor sit amt, consectet adop adipisicing elit, sed do eiusmod teporara incididuntLorem ipsum dolor sit amt, consectet adop adipisicing elit, sed do eiusmod teporara incididunt</p>
+    <div class="row howitrow">
+		{% for works in site.howitwork  %}
+			<div class="col-xs-12 col-sm-4 col-md-4">
+				<figure><img src="{{site.baseurl}}/images/{{works.icon}}" alt=""></figure>	
+				<h5>{{works.heading}}</h5>
+				<p>{{works.desc}} </p>
+			</div>		
+		{% endfor %}
+	  
+    </div>
+</div>

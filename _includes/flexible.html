@@ -1,0 +1,19 @@
+<!-- ================ Flexible Section ================ -->
+<div class="container flexiblesection howitworks">
+	<h4>Flexible and Easy to Use</h4>
+    <p>Lorem ipsum dolor sit amt, consectet adop adipisicing elit, sed do eiusmod teporara incididuntLorem ipsum dolor sit amt, consectet adop adipisicing elit, sed do eiusmod teporara incididuntLorem ipsum dolor sit amt, consectet adop adipisicing elit, sed do eiusmod teporara incididunt</p>
+
+		 <div class="row howitrow">
+			{% for flexibleList in site.flexible  %}				
+				<div class="col-xs-12 col-sm-4 col-md-4">
+					<figure><img src="{{site.baseurl}}/images/{{flexibleList.icon}}" alt=""></figure>	
+					<h5>{{flexibleList.heading}}</h5>
+					<p>{{flexibleList.desc}} </p>
+				</div>		
+			{% endfor %}
+
+    </div>
+	
+	
+	
+</div>
