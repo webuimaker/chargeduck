@@ -1,0 +1,52 @@
+
+<!-- ================ Footer Area ================ -->
+<footer class="container-fluid footbg">
+	<div class="container">
+    	<div class="socialtop">
+			<ul>
+				{% for socialLink in site.social %}		
+				  <li><a href="{{socialLink.url}}"><i class="fa {{socialLink.icon}}"></i></a></li>
+				{% endfor %}
+			</ul>
+		
+        </div>
+        
+        <div class="formheading">
+            <h3>Submit your id &amp; Get Our White Paper</h3>
+            <p>Subscribe to our newsletter to receive exclusive content.</p>
+        </div>
+        
+        <div class="submitform">
+        	<div class="row">
+            	<div class="col-md-5"><input id="" name="textinput" placeholder="Enter Your Name" class="form-control" required type="text"></div>
+                <div class="col-md-5"><input id="" name="textinput" placeholder="Enter Your Email Address" class="form-control" required type="text"></div>
+                <div class="col-md-2"><button type="button" class="btn btn-lg btn-info">Submit</button></div>
+            </div>
+        </div>
+        
+        <div class="footbtm">
+        	<ul>
+				{% for footnav in site.footerNav %}
+					<li><a href="{{site.baseurl}}/{{ footnav.url }}" >{{ footnav.title }}</a></li>				
+				{% endfor %}
+            </ul>
+            <p>Copyright &copy; 2017 chargeduck. All Rights Reserved.</p>
+        </div>
+    </div>
+</footer>
+
+
+
+<!-- Bootstrap Js -->
+<script src="{{site.baseurl}}/js/bootstrap.min.js"></script>
+
+<!-- Slick Nav -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+<script src="{{site.baseurl}}/SlickNav/jquery.slicknav.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$('#menu').slicknav();
+});
+</script>
+</body>
+</html>

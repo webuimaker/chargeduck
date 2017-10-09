@@ -1,0 +1,14 @@
+<!-- ================ Header Starts================ -->
+<div class="container header">
+	<div class="row">
+        <figure class="col-xs-12 col-sm-12 col-md-3 logo"><a href="{{site.baseurl}}"><img src="{{site.baseurl}}/images/logo.jpg" alt=""></a></figure>
+        <nav class="col-xs-12 col-sm-9 col-md-9 navright">
+            <ul id="menu">			
+				{% for nav in site.navigations %}
+					<li class="{% if nav.title==page.title %}active{% endif %}"><a href="{{site.baseurl}}/{{ nav.url }}" >{{ nav.title }}</a></li>				
+				{% endfor %}
+                
+            </ul>
+        </nav>
+    </div>
+</div>

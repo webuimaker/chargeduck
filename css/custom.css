@@ -1,0 +1,226 @@
+@charset "utf-8";
+/* CSS Document */
+*,
+*::before,
+*::after { box-sizing: border-box; }
+html { width: 100%; min-height: 100%; }
+body { color:#1b2934; font-family: 'Open Sans', sans-serif; font-size:16px; }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 { color: #0e3853; }
+img { max-width: 100%; }
+p { margin: 0; padding: 0; font-size:16px;}
+a { text-decoration: none; }
+a:hover { text-decoration: none; }
+ul { list-style: none; }
+.no-pad { padding: 0 !important; }
+.no-spacing { margin: 0 !important; }
+.no-pad-rt { padding-right: 0!important; }
+.no-pad-lft { padding-left: 0!important; }
+.no-floting { float: none; }
+.hor-center { margin: auto; }
+.hor-spacer-10 { margin-top: 10px; }
+.rel { position: relative; }
+.abs { position: absolute; }
+.txt-center { text-align: center; }
+.mTop25 { margin-top: 25px; }
+
+
+/********************************/
+/*          Header Section     */
+/********************************/
+.header{padding-top:40px; padding-bottom:40px;}
+
+.navright { position: relative; display: inline-block; padding-top:6px;}
+.navright ul { float: right; margin-top:5px; position: relative; padding: 0; }
+.navright ul li { margin: 0px; display: inline-block; float: left; }
+.navright li a {font-family: 'Open Sans', sans-serif; font-size:18px; color: #1b2934; padding:6px 14px; display: block; }
+.navright li a:hover, .navright li.active a{color:#2785e7;}
+.navright li:last-child a{background:#ff6622; border-radius:4px; padding:6px 18px; color:#fff;}
+.navright li:last-child a:hover{ background:#c04914; -webkit-transition: background-color .3s ease-out; -moz-transition: background-color .3s ease-out; -o-transition: background-color .3s ease-out; transition: background-color .3s ease-out; }
+
+/* Hide Dropdowns by Default
+ * and giving it a position of absolute */
+
+.navright ul ul { display: none; position: absolute; /* has to be the same number as the "line-height" of "nav a" */
+top: 20px; margin: 0px; padding: 0; background: #2785e7; z-index:99999;}
+
+/* Display Dropdowns on Hover */
+
+.navright ul li:hover > ul { display: inherit; }
+
+/* Fisrt Tier Dropdown */
+
+.navright ul ul li { width: 170px; float: none; display: list-item; position: relative; }
+
+.navright ul ul li a { color: #fff !important; display: block; padding: 8px 8px; }
+
+.navright ul ul li a:hover { background: #000; text-decoration: none; }
+.navright ul ul li:last-child a{ padding: 8px 8px;}
+
+/* Second, Third and more Tiers	
+ * We move the 2nd and 3rd etc tier dropdowns to the left
+ * by the amount of the width of the first tier.
+*/
+
+.navright ul ul ul li { position: relative; top: -60px; /* has to be the same number as the "width" of "nav ul ul li" */ 
+left: 170px; }
+
+/* Change ' +' in order to change the Dropdown symbol */
+
+.navright li > a:after { content: ' '; }
+
+.navright li > a:only-child:after { content: ''; }
+
+.js #menu { display: block; }
+
+.js .slicknav_menu { display: none; }
+
+.slidersection .sy-slides-wrap{border-top:4px solid #2785e7; border-bottom:4px solid #4e4e4e;}
+
+/********************************/
+/*          Banner Top   */
+/********************************/
+.banner{background:url(../images/bannerbg.jpg) no-repeat; min-height:633px; background-size:cover; padding-top:95px;}
+.bannertxt{width:100%; max-width:1170px; margin:0px auto;}
+.banner h1{color:#ffffff; font-size:50px; font-family: 'Roboto Slab', serif; font-weight:300; text-align:center;}
+.banner h3{text-align:center; color:#fff; font-family: 'Roboto Slab', serif; line-height:1.5;}
+.banner figure{padding-top:48px; text-align:center; width:100%; position:absolute;}
+
+/********************************/
+/*         howitworks
+/********************************/
+.howitworks{padding-top:180px; text-align:center;}
+.howitworks h4{color:#000000; font-size:50px; font-family: 'Roboto Slab', serif; font-weight:300;}
+.howitworks p{font-size:16px; color:#1b2934; font-family: 'Open Sans', sans-serif; line-height:1.6;}
+.howitrow{margin-top:40px;}
+.howitrow h5{font-family: 'Roboto Slab', serif; font-size:28px; font-weight:400; margin-top:20px;}
+.howitrow p{color:#1b2934;}
+
+/********************************/
+/*         Endless Features
+/********************************/
+.endlessfeature{background:url(../images/endlessfeaturebg.jpg) no-repeat right center; min-height:706px; background-size:cover; margin-top:60px;}
+.endlessfeature .endlesscontent{padding-top:120px;}
+.endlessfeature .endlesscontent h1{color:#ffffff; font-size:50px; font-family: 'Roboto Slab', serif; font-weight:300;}
+.endlessfeature .endlesscontent p{color:#f5f8fa; font-family: 'Open Sans', sans-serif; line-height:1.6;}
+.endlessfeature .endlessrow{margin-top:45px;}
+.endlessrow h2{margin:0 0 8px; font-size:22px; color:#ffffff; font-family: 'Roboto Slab', serif; font-weight:300;}
+.endlessrow p{font-size:14px; line-height:1.3;}
+.endlessrow .endlesscol{margin-bottom:35px;}
+.endlesscontent .btn{background:#ff6622; border-radius:4px; padding:8px 18px; color:#fff; font-size:22px;}
+.endlesscontent .btn:hover{background:#c04914; -webkit-transition: background-color .3s ease-out; -moz-transition: background-color .3s ease-out; -o-transition: background-color .3s ease-out; transition: background-color .3s ease-out;}
+
+/********************************/
+/*         Flexible Section
+/********************************/
+.flexiblesection{padding-top:100px; padding-bottom:100px;}
+
+/********************************/
+/*        Video Section
+/********************************/
+.videosection{padding-bottom:60px;}
+.videosection h4{color:#000000; font-size:50px; font-family: 'Roboto Slab', serif; font-weight:300; margin-bottom:25px; text-align:center;}
+.videosection h5{color:#000; font-size:18px; font-family: 'Open Sans', sans-serif; font-weight:bold;}
+.videosection p{font-size:16px; line-height:1.3; margin-bottom:15px;}
+.videosection img{width:100%;}
+
+.btn{background:#ff6622; border-radius:4px; padding:8px 18px; color:#fff; font-size:22px;}
+.btn:hover{background:#c04914; color:#fff; -webkit-transition: background-color .3s ease-out; -moz-transition: background-color .3s ease-out; -o-transition: background-color .3s ease-out; transition: background-color .3s ease-out;}
+
+/********************************/
+/*        Advance Section
+/********************************/
+.advancesection{background:url(../images/advancebg.jpg) no-repeat; background-size:cover; min-height:448px; padding-top:80px; padding-bottom:60px; text-align:center;}
+.advancesection h4{color:#fff; font-size:36px; font-family: 'Roboto Slab', serif; font-weight:300; margin-bottom:0; text-align:center;}
+.advancesection h3{color:#fff; font-size:42px; font-family: 'Roboto Slab', serif; font-weight:bold; margin-top:8px; margin-bottom:18px; text-align:center;}
+.advancesection figure{margin-bottom:20px;}
+
+
+/********************************/
+/*        Product Reviews
+/********************************/
+.reviewsection{padding-top:100px; padding-bottom:50px; text-align:center;}
+.reviewsection  .carousel-inner{
+	
+	width:90%;
+	margin:auto;
+	min-height:150px;
+}
+.reviewsection  .carousel-inner .item{
+	width:80%;
+	margin:0px auto;
+	padding:20px 0px;
+
+}
+.reviewsection  .carousel-inner:before{
+	content: "\f10d";
+    left: 0px;
+    top: 0px;
+    color: #000;
+    font-family: fontawesome;
+    font-size: 28px;
+    position: absolute;
+
+}
+.reviewsection  .carousel-inner:after{
+	content: "\f10e";
+    right: 0px;
+    bottom: 0px;
+    color: #000;
+    font-family: fontawesome;
+    font-size: 28px;
+    position: absolute;
+
+}
+.reviewsection  .carousel-inner .caption{
+	color:#333;
+}
+.reviewsection  .carousel-inner .client-name{
+	color:#000;
+	font-size:16px;
+	font-weight:600;
+	margin-top:15px;
+}
+.reviewsection   .carousel-control{
+	background:none; 
+	padding:0px;
+	width:auto;
+	margin: auto;
+    height: 10px;
+}
+
+/********************************/
+/*        Faq Section
+/********************************/
+.faqsection{padding-top:50px; padding-bottom:100px;}
+.faqtop{text-align:center; margin-bottom:35px;}
+.faqtop h4{color:#000000; font-size:36px; font-family: 'Roboto Slab', serif; font-weight:300; margin-top:0; margin-bottom:15px; text-align:center;}
+.faqcol{margin-bottom:20px;}
+.faqcol h3{font-size:24px; font-family: 'Roboto Slab', serif; font-weight:300; }
+.faqcol p{font-size:16px;}
+
+/********************************/
+/*        Footer Section
+/********************************/
+.footbg{background:url(../images/footerbg.jpg) no-repeat; background-size:cover; padding-top:150px; padding-bottom:80px;}
+.socialtop{text-align:center; margin-bottom:35px;}
+.socialtop ul{margin:0px; padding:0px;}
+.socialtop li{display:inline-block; margin:0px 15px;}
+.socialtop li a{font-size:40px; font-family: 'Roboto Slab', serif; font-weight:300; color:#fff;}
+.socialtop li a:hover{color:#f09a0d;}
+.formheading h3{color:#fff; font-size:46px; font-family: 'Roboto Slab', serif; font-weight:300; margin-top:0; margin-bottom:15px; text-align:center;}
+.formheading p{text-align:center; font-size:16px; color:#fff;}
+
+.submitform{width:80%; margin:30px auto 0; background:#fff; border-radius:16px; padding:15px;}
+.submitform .form-control{background:#d8d8d8; height:54px; border-radius:14px;}
+.submitform .btn{border:0; padding:12px 18px; border-radius:14px;}
+
+.footbtm{text-align:center; margin-top:35px; color:#fff;}
+.footbtm ul{margin:0px 0 5px; padding:0;}
+.footbtm li{display:inline-block; margin:0px 8px;}
+.footbtm li a{color:#fff;}
+.footbtm li a:hover{color:#f09a0d;}
